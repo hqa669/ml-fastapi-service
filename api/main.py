@@ -37,7 +37,7 @@ app = FastAPI()
 
 @app.get("/")
 def health_check():
-    return {"status": "Model API is live."}
+    return {"status": "Service online."}
 
 @app.post("/predict")
 async def predict(request: Request, data: Union[InputData, List[InputData]]):
